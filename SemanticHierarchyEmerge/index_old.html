@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- === Header Starts === -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SemanticHierarchyEmerge.">
+  <meta name="keywords" content="SemanticHierarchyEmergeN, Latent Space, GAN, Model Interpretation, GAN Interpretation,
+                                 Image editing, Image Manipulation, Semantic Image Editing, Semantic Image Manipulation,
+                                 .">
+  <meta name="author" content="Ceyuan Yang">
+
+  <title>SemanticHierarchyEmerge</title>
+
+  <link rel="stylesheet" type="text/css" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<!-- === Header Ends === -->
+
+
+<body>
+
+
+<!-- === Home Section Starts === -->
+<section id="home" class="container pt-30">
+  <div class="row"><div class="col-lg-12 col-md-18 col-sm-21">
+    <h3 class="text-center">Semantic Hierarchy Emerges in Deep Generative Representations for Scene Synthesis</h3>
+    <p class="mt-15 text-center" style="font-size: 24px; color: gray; line-height: 35px">
+      <a href="http://ceyuan.me" target="_blank">Ceyuan Yang</a><sup>*</sup>,
+      <a href="http://shenyujun.github.io" target="_blank">Yujun Shen</a><sup>*</sup>,
+      <a href="http://bzhou.ie.cuhk.edu.hk" target="_blank">Bolei Zhou</a>
+      <br>
+      The Chinese University of Hong Kong &nbsp;&nbsp;
+    </p>
+    <div class="mt-25 text-center" width="30%">
+      <a class="button" href="https://ceyuan.me/SemanticHierarchyEmerge" target="_blank">Paper</a>
+      <a class="button ml-50" href="https://ceyuan.me/SemanticHierarchyEmerge/" target="_blank">Code</a>
+    </div>
+  </div></div>
+</section>
+<!--====== Home Section Ends ======-->
+
+
+<!--====== Abstract Section Starts ======-->
+<section id="Abstract" class="container pt-30">
+  <div class="row"><div class="col-lg-12 col-md-18 col-sm-21">
+    <h4>Abstract</h4>
+    <div class="text-center mt-50"><img src="figures/framework.jpg"></img></div>
+    <p class="mt-15 text-justify fs-20">
+      Despite the success of Generative Adversarial Networks (GANs) in image synthesis, there lacks enough understanding on what networks have learned inside the deep generative representations and how photo-realistic images are able to be composed from random noises. In this work, we show that highly-structured semantic hierarchy emerges from the generative representations as the variation factors for synthesizing scenes. By probing the layer-wise representations with a broad set of visual concepts at different abstraction levels, we are able to quantify the causality between the activations and the semantics occurring in the output image. Such a quantification identifies the human-understandable variation factors learned by GANs to compose scenes. The qualitative and quantitative results suggest that the generative representations learned by GAN are specialized to synthesize different hierarchical semantics: the early layers tend to determine the spatial layout and configuration, the middle layers control the categorical objects, and the later layers finally render the scene attributes as well as color scheme. Identifying such a set of manipulatable latent semantics facilitates semantic scene manipulation.
+    </p>
+  </div></div>
+</section>
+<!--====== Abstract Section Ends ======-->
+
+
+<!--====== Results Section Starts ======-->
+<section id="results" class="container pt-30">
+  <div class="row"><div class="col-lg-12 col-md-18 col-sm-21">
+    <h4>Results</h4>
+    <p class="mt-15 text-justify fs-20">
+    We conduct the layer-wise analysis on StyleGAN. Qualitative and quantitative experiments reveal that the layers of the generator are specialized to compose semantics in a hierarchical manner: the bottom layers determine the layout, the lower layers and upper layers control category-level and attribute-level variations respectively, while color scheme is mostly rendered at the top.
+    </p>
+    <div class="text-center mt-50"><img src="figures/four_level_comparison.jpg"></img></div>
+    <p class="mt-15 text-justify fs-20">
+    Such results enable the semantic scene manipulation.
+    </p>
+    <div style="position: relative; padding-top: 50%; text-align: center">
+      <iframe src="https://www.dropbox.com/s/0bicyuti5d6tvqs/demo.mp4?raw=1" frameborder=0
+              style="position: absolute; top: 5%; left: 5%; width: 90%; height: 90%;"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+    </div>
+  </div></div>
+</section>
+<!--====== Results Section Ends ======-->
+
+
+<!--====== Demo Section Starts ======-->
+<!-- <section id="demo" class="container pt-30">
+  <div class="row"><div class="col-lg-12 col-md-18 col-sm-21">
+    <h3>Demo</h3>
+    <p class="mt-15 mb-0" style="font-size: 20px; color: #505050; text-align: justify">
+      Comming soon.
+    </p>
+  </div></div>
+</section> -->
+<!--====== Demo Section Ends ======-->
+
+
+<!--====== BitTex Section Starts ======-->
+<section id="citation" class="container pt-30">
+  <div class="row"><div class="col-lg-12 col-md-18 col-sm-21">
+    <h4>Bibtex</h4>
+<pre class="mt-15">
+@article{yang2019Semantic,
+  title   = {Semantic Hierarchy Emerges in Deep Generative Representations for Scene Synthesis},
+  author  = {Ceyuan Yang, Yujun Shen, Bolei Zhou},
+  journal = {arXiv preprint arXiv:ID_TBD},
+  year    = {2019}
+}
+</pre>
+    </div></div>
+</section>
+<!--====== BitTex Section Ends ======-->
+
+
+<!-- === Back-to-Top Button === -->
+<a href="#" class="back-to-top-button"><i class="fa fa-arrow-up"></i></a>
+<!-- === Back-to-Top Button === -->
+
+
+<!-- === Script Starts === -->
+<script src="assets/jquery-3.4.1.min.js"></script>
+<script src="assets/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+<script src="assets/main.js"></script>
+<!-- === Script Ends === -->
+
+
+</body>
+</html>
