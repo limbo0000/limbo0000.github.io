@@ -1,5 +1,19 @@
 /* CSS Document */
 
+.citation {
+  margin-top: 15px;
+  clear: both;
+}
+.citation:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.citation img {
+  float: left;
+  margin: 0 10px 10px 0;
+  width: 150px;
+}
  
 body {
 	/*background: #f7f7f7;*/
