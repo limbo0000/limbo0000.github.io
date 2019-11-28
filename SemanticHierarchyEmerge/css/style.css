@@ -3,6 +3,7 @@
 .citation {
   margin-top: 15px;
   clear: both;
+  font-size:18px
 }
 .citation:after {
   content: '';
@@ -21,7 +22,7 @@ body {
 	color: #ffffff;
     font-family: 'Lato', Verdana, Helvetica, sans-serif;;
     font-weight: 300;
-	font-size:16px;
+	font-size:20px;
 }
 
 /* Headings */
@@ -73,7 +74,7 @@ a:hover {
 	/* border: none; */
 	text-align: center;
 	padding: 1em 1em 1em 1em; /* top, right, bottom, left */
-	color: #4d4b59;
+	color: #000000;
 	background: #ffffff;
         /* background: #f7f7f7 */
 }
@@ -91,7 +92,7 @@ a:hover {
 	/* border: none; */
 	text-align: left;
 	padding: 1em 1em 1em 1em; /* top, right, bottom, left */
-	color: #4d4b59;
+	color: #000000;
 	background: #ffffff;
 }
 
@@ -103,7 +104,7 @@ a:hover {
 	border: none;
 	text-align: left;
 	padding: 1em 1em 1em 1em; /* top, right, bottom, left */
-	color: #4d4b59;
+	color: #000000;
 	background: #ffffff;
 }
 
