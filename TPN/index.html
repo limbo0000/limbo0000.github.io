@@ -1,0 +1,121 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TPN: Temporal Pyramid Network</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body> 
+
+<div class="container">
+  <table border="0" align="center">
+    <tr>
+      <td width="700" align="center" valign="middle">
+      <span class="title"><h2>TPN: Temporal Pyramid Network for Action Recognition</h2></span></td>
+    </tr>
+    <tr>
+        <td colspan="3" align="center"><h3><a href="http://ceyuan.me" target="_blank">Ceyuan Yang</a><sup>*</sup>, 
+          <a href="" target="_blank">Yinghao Xu</a><sup>*</sup>, 
+          <a href="https://shijianping.me/" target="_blank">Jianping Shi</a>,
+          <a href="http://daibo.info/" target="_blank">Bo Dai</a>,
+          <a href="http://bzhou.ie.cuhk.edu.hk/" target="_blank">Bolei Zhou</a> </h3></td>
+    </tr>
+    <tr>
+        <td colspan="3" align="center"><h3> The Chinese University of Hong Kong</h3></td>
+    </tr>
+    <tr><td colspan="3" align="center"><h3>To Appear in CVPR2020</h3> </tr>
+    <tr>
+        <td colspan="3" align="center"><h3> <a href="" target="_blank">[Paper]</a> <a href="" target="_blank">[Code]</a>  </h3></td>
+    </tr>
+  </table>
+  <p><img src="figures/framework.png" width="1000" align="middle" /></p>
+  <p align='left'><b>Overview of TPN</b>: 
+    (a) Backbone Network to extract multiple level features. 
+    (b) Spatial Semantic Modulation to align spatial semantics. 
+    (c) Temporal Rate Modulation to adjust relative tempo among levels. 
+    (d) Information Flow to enhance and enrich level-wise representations. 
+    (e) Final Prediction to aggregate all levels of pyramid. 
+    Note that different color denotes different level of pyramid.</p>
+  </div>
+  </br>
+</div>
+
+</br>
+
+<div class="container">
+  <h2>Abstract</h2>
+    <div class="overview">
+    <p>
+      Different action instances naturally have different visual tempos, which describe how fast the actions go. Since the visual tempos characterize the dynamics of actions, modeling and extracting the visual tempos might beneﬁt the recognition of actions. Previous work mainly sampling raw videos at multiple rates to construct an input-level frame pyramid, which tends to require multi-branch networks. Differently, we propose a generic Temporal Pyramid Network (TPN) at feature-level, which can be integrated into a single 2D and 3D backbone network in a plug-and-play manner. After thoroughly investigating the two important components of TPN, the source of features and the fusion of features, we ﬁnd that feature hierarchy inside a single network manages to capture the action instances at various tempos. Importantly, on multiple action recognition benchmarks, TPN shows consistent improvements over other challenging baselines. Speciﬁcally, when equipped with TPN, the 3D ResNet-50 with dense sampling remains to obtain a 2% gain on the validation set of Kinetics-400. The in-depth analysis also shows TPN gains most of its improvements on action classes that have large variance in their visual tempos, supporting the effectiveness of TPN.
+    </p>
+</div>
+</div>
+
+</br>
+
+<div class="container">
+  <h2>Results</h2>
+    <div class="overview">
+    <ul style="list-style-type:disc;">
+        <!-- <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li> -->
+    <li><b>Quantitive Results</b></li>  
+    <p>
+    The following figure shows results for various of large video understanding benchmarks, i.e Kinetics, Something-Something-V1 as well as Epic-Kitchen.
+    Our TPN brings a large gain in these datasets and outpeforms other SOTA methods.
+    </p>
+    <p><img src="figures/exp_result.png" width="900" align="middle" /></p>
+
+    <li><b>Empirical Study</b></li>
+    <p><i>Per-class Performance Gain vs. Per-class Variance of Visual Tempos :</i> 
+      We plot the statistics of visual tempo in Figure 4, where the performance gain is clearly positively correlated with the variance of visual tempos. This study has strongly veriﬁed our motivation and design of TPN.</p>
+    <p><i>Robustness of TPN to Visual Tempo Variation :</i>
+      Figure 5 includes the accuracy curves of varying visual tempos for I3D-50 and I3D-50 + TPN, from which we can see TPN help improve the robustness of I3D-50, resulting in a curve with moderater ﬂuctuations. Moreover, the robustness to the visual tempo variation becomes clearer as we vary the visual tempo harder, as TPN could adapt itself dynamically according to the need.
+    </p>       
+     
+    <p><img src="figures/empirical.png" width="900" align="middle" /></p>
+    </ul>
+
+    </br>
+  </div>
+</div>
+
+</br>
+
+<!-- <div class="container">
+  <h2>Reference</h2>
+    <div class="overview">
+    <p>
+@article{yang2019semantic, </br>
+&nbsp;&nbsp;&nbsp;&nbsp;title   = {Semantic Hierarchy Emerges in Deep Generative Representations for Scene Synthesis}, </br>
+&nbsp;&nbsp;&nbsp;&nbsp;author  = {Ceyuan Yang, Yujun Shen, Bolei Zhou},</br>
+&nbsp;&nbsp;&nbsp;&nbsp;journal = {arXiv preprint arXiv:1911.09267},</br>
+&nbsp;&nbsp;&nbsp;&nbsp;year    = {2019}</br>
+} -->
+
+<!-- </br> -->
+<!-- </br> -->
+<!-- <strong>Other related work:</strong> 
+
+</br>
+
+<p class="citation">
+<img src="thumb/zhou2015small.png">
+<a href="http://arxiv.org/pdf/1412.6856.pdf">
+B.Zhou, A.Khosla, A.Lapedriza, A.Oliva, and A.Torralba. 
+Object Detectors Emerge in Deep Scene CNNs.
+ICLR, 2015.
+</a>
+<br><b>Comment</b>: Employs AMT workers to observe emergent interpretable object detectors inside the CNN trained for classifying scenes.
+</p> -->
+
+
+<!--<p align="center" class="acknowledgement">Last updated: Jan. 6, 2017</p>-->
+</body>
+</html>
