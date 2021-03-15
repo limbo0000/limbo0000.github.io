@@ -1,75 +1,6 @@
 <html>
     <head>
-            <style type="text/css">
-                /* Color scheme stolen from Sergey Karayev */
-            
-                a {
-                  color: #1772d0;
-                  text-decoration: none;
-                }
-            
-                a:focus,
-                a:hover {
-                  color: #f09228;
-                  text-decoration: none;
-                }
-            
-                body,
-                td,
-                th,
-                tr,
-                p,
-                a {
-                  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-                  font-size: 15px
-                }
-            
-                strong {
-                  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-                  font-size: 15px;
-                }
-            
-                heading {
-                  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-                  font-size: 23px;
-                }
-            
-                papertitle {
-                  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-                  font-size: 15px;
-                  font-weight: 700
-                }
-            
-                name {
-                  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-                  font-size: 33px;
-                }
-            
-                .one {
-                  width: 160px;
-                  height: 160px;
-                  position: relative;
-                }
-            
-                .two {
-                  width: 160px;
-                  height: 160px;
-                  position: absolute;
-                  transition: opacity .2s ease-in-out;
-                  -moz-transition: opacity .2s ease-in-out;
-                  -webkit-transition: opacity .2s ease-in-out;
-                }
-            
-                .fade {
-                  transition: opacity .2s ease-in-out;
-                  -moz-transition: opacity .2s ease-in-out;
-                  -webkit-transition: opacity .2s ease-in-out;
-                }
-            
-                span.highlight {
-                  background-color: #ffffd0;
-                }
-              </style>
+        <link rel="stylesheet" href="font.css"> 
         <title>Ceyuan Yang's Homepage </title>
 </head>
     <body><table border=0 width=980px align=center><tr><td>
@@ -120,66 +51,88 @@
             <table cellspacing="17">
 
                 <tr>
-                    <td width="35%">
-                        <img width="320" height="160" src="images/eccv_2020.png" border="0">
+                    <td width="25%">
+                        <img width=100% height=auto src="images/eccv_2020.png" border="0">
                             </td>
                     <td>
-                    <strong>Learning Motion Priors for Efficient Video Object Detection,</strong> 
-                    <br>
-                    <a href="https://jiangzhengkai.github.io/">Zhengkai Jiang</a>, <a href="http://liuyu.us/">Yu Liu</a>, <strong>Ceyuan Yang</strong>, Jihao Liu, Qian Zhang, Shiming Xiang, Chunhong Pan. 
-                    <br>
-                    <em>IEEE European Conference on Computer Vision</em> (<b>ECCV</b>), 2020. <br>
-                    [<a href="https://arxiv.org/pdf/1911.05253.pdf"><font color="red" size="3">Paper</font></a>][<a href="https://github.com/jiangzhengkai/lsts"><font color="red" size="3">Code</font></a>]
-                    </td>
-                </tr>
-
-
-                <tr>
-                    <td width="35%">
-                        <img width="320" height="160" src="images/vthcl.png" border="0">
-                            </td>
-                    <td>
-                    <strong>Video Representation Learning with Visual Tempo Consistency,</strong> 
-                    <br>
-                    <strong>Ceyuan Yang,</strong> <a href="https://justimyhxu.github.io/academic.html">Yinghao Xu</a>, <a href="http://daibo.info/">Bo Dai</a>, <a href="http://bzhou.ie.cuhk.edu.hk/">Bolei Zhou</a>. 
-                    <br>
-                    <em>arxiv pre-print</em>, 2020.
-                    <br>
-                    [<a href="https://arxiv.org/pdf/2006.15489.pdf"><font color="red" size="3">Paper</font></a>][<a href="https://github.com/decisionforce/VTHCL"><font color="red" size="3">Code</font></a>]
-                    <br>
+                    <div class="title">Learning Motion Priors for Efficient Video Object Detection,</div>
+                    <div class="authors">
+                        <a href="https://jiangzhengkai.github.io/">Zhengkai Jiang</a>,
+                        <a href="http://liuyu.us/">Yu Liu</a>,
+                        <span class="author cy">Ceyuan Yang,</span>
+                        <a href="">Jihao Liu</a>,
+                        <a href="">Qian Zhang</a>,
+                        <a href="">Shiming Xiang</a>,
+                        <a href="">Chunhong Pan</a>.
+                    </div>
+                    <div>
+                        <span class="venue"> <a href="https://eccv2020.eu/">ECCV 2020</a> </span> /
+                        <span class="tag"> <a href="https://arxiv.org/pdf/1911.05253.pdf">Paper</a> </span> /
+                        <span class="tag"> <a href="https://github.com/jiangzhengkai/lsts">Code</a> </span>
+                    </div>
                     </td>
                 </tr>
 
                 <tr>
-                    <td width="35%">
-                        <img width="320" height="160" src="images/cvpr2020.png" border="0">
+                    <td width="25%">
+                        <img width=100% height=auto src="images/vthcl.png" border="0">
                             </td>
                     <td>
-                    <strong>Temporal Pyramid Network for Action Recognition,</strong> 
-                    <br>
-                    <strong>Ceyuan Yang*,</strong> <a href="https://justimyhxu.github.io/academic.html">Yinghao Xu*</a>, <a href="http://shijianping.me/">Jianping Shi</a>, <a href="http://daibo.info/">Bo Dai</a>, <a href="http://bzhou.ie.cuhk.edu.hk/">Bolei Zhou</a>. 
-                    <br>
-                    <em>IEEE Conference on Computer Vision and Pattern Recognition</em> (<b>CVPR</b>), 2020.
-                    <br>
-                    [<a href="https://arxiv.org/pdf/2004.03548.pdf"><font color="red" size="3">Paper</font></a>][<a href="https://decisionforce.github.io/TPN/"><font color="red" size="3">Webpage</font></a>][<a href="https://github.com/decisionforce/TPN"><font color="red" size="3">Code</font></a>]
-                    <br>
+                    <div class="title">Video Representation Learning with Visual Tempo Consistency,</div>
+                    <div class="authors">
+                        <span class="author cy">Ceyuan Yang,</span>
+                        <a href="https://justimyhxu.github.io">Yinghao Xu</a>,
+                        <a href="http://daibo.info/">Bo Dai</a>,
+                        <a href="http://bzhou.ie.cuhk.edu.hk/">Bolei Zhou</a>.
+                    </div>
+                    <div>
+                        <span class="venue"> <a href="">ArXiv pre-print</a> </span> /
+                        <span class="tag"> <a href="https://arxiv.org/pdf/2006.15489.pdf">Paper</a> </span> /
+                        <span class="tag"> <a href="https://github.com/decisionforce/VTHCL">Code</a> </span>
+                    </div>
                     </td>
                 </tr>
 
                 <tr>
-                        <td width="35%">
-                            <img width="320" height="160" src="images/eccv2018_2.png" border="0">
-                                </td>
-                        <td>
-                                <strong>Pose Guided Human Video Generation,</strong>
-                                <br>
-                            <strong> Ceyuan Yang, </strong> <a href="https://wang-zhe.me/">Zhe Wang</a>, <a href="https://xingezhu.me/aboutme.html">Xinge Zhu</a>, <a href="https://scholar.google.com/citations?user=QZ-JKOUAAAAJ&hl=en">Chen Huang</a>, <a href="http://shijianping.me/">Jianping Shi</a>, <a href="http://dahua.me/">Dahua Lin</a>. 
-                            <br>
-                            <em>IEEE European Conference on Computer Vision</em> (<b>ECCV</b>), 2018. <br>
-                         [<a href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Ceyuan_Yang_Pose_Guided_Human_ECCV_2018_paper.pdf"><font color="red" size="3">Paper</font></a>]<p></p>
+                    <td width="25%">
+                        <img width=100% height=auto src="images/cvpr2020.png" border="0">
+                            </td>
+                    <td>
+                    <div class="title">Temporal Pyramid Network for Action Recognition,</div>
+                    <div class="authors">
+                        <span class="author cy">Ceyuan Yang*,</span>
+                        <a href="https://justimyhxu.github.io">Yinghao Xu*</a>,
+                        <a href="http://shijianping.me/">Jianping Shi</a>,
+                        <a href="http://daibo.info/">Bo Dai</a>,
+                        <a href="http://bzhou.ie.cuhk.edu.hk/">Bolei Zhou</a>.
+                    </div>
+                    <div>
+                        <span class="venue"> <a href="http://cvpr2020.thecvf.com/">CVPR 2020</a> </span> /
+                        <span class="tag"> <a href="https://arxiv.org/pdf/2004.03548.pdf">Paper</a> </span> /
+                        <span class="tag"> <a href="https://decisionforce.github.io/TPN">Code</a> </span>
+                    </div>
+                    </td>
+                </tr>
 
-                        </td>
-                    </tr>
+                <tr>
+                    <td width="25%">
+                        <img width=100% height=auto src="images/eccv2018_2.png" border="0">
+                            </td>
+                    <td>
+                    <div class="title">Pose Guided Human Video Generation,</div>
+                    <div class="authors">
+                        <span class="author cy">Ceyuan Yang,</span>
+                        <a href="https://xingezhu.me/aboutme.html">Xinge Zhu</a>,
+                        <a href="https://scholar.google.com/citations?user=QZ-JKOUAAAAJ&hl=en">Chen Huang</a>,
+                        <a href="http://shijianping.me/">Jianping Shi</a>,
+                        <a href="http://dahua.me/">Dahua Lin</a>.
+                    </div>
+                    <div>
+                        <span class="venue"> <a href="https://eccv2018.org/">ECCV 2018</a> </span> /
+                        <span class="tag"> <a href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Ceyuan_Yang_Pose_Guided_Human_ECCV_2018_paper.pdf">Paper</a> </span>
+                    </div>
+                    </td>
+                </tr>
                     
             </table>
             </body>
